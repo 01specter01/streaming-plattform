@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 html body {
-    padding: 0;
-    margin: 0;
     background-color: var(--secondary);
 }
 :root {
@@ -76,14 +74,29 @@ span {
 }
 
 main {
-    width: 50%;
+    width: 100vw;
     position: relative;
+    display: flex;
 }
 p {
     border: 1px solid var(--primary);
-    max-width: 530px;
+
     padding: 4px;
     color: rgb(237, 237, 237);
     background-color: var(--primary);
     font-size: x-large;
+}
+article {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.liste {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.liste > img {
+    width: min-content;
 }
